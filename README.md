@@ -45,4 +45,17 @@ test_assignment/
    cd frontend
    npm install
    ```
-
+4. Then start a local mongodb server, for example, in ubuntu , using:-
+   ```bash
+   mongosh
+   ```
+5. Start the express server:-
+   ```bash
+   cd backend
+   nodemon app.js
+   ```
+6. Start the Frontend react client
+   ```bash
+   cd frontend
+   npm start
+   ```
