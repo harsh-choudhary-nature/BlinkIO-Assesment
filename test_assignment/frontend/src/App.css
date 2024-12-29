@@ -1,0 +1,226 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar-title {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-link, .navbar-button {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar-link:hover, .navbar-button:hover {
+  color: #d1ecf1;
+}
+
+.navbar-button {
+  font-size: 0.9em;
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+.navbar-button:hover {
+  background-color: white;
+  color: #007bff;
+}
+
+/* Container for the form */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f4f4f4;
+}
+
+.form-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Limiting the width for larger screens */
+  margin: 10px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+/* Heading */
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Focus effect for inputs */
+.input-field:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Submit button */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.submit-button:hover {
+  background-color: #007bff;
+}
+
+.task-list-container {
+  max-width: 600px;          /* Limit width of container */
+  margin: 0 auto;            /* Center the container horizontally */
+  padding: 20px;             /* Add padding inside the container */
+  text-align: center;        /* Center text in the container */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px;        /* Round corners of the container */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.task-form {
+  display: flex;             /* Use flexbox for the input and button */
+  justify-content: center;   /* Center items horizontally */
+  margin-bottom: 20px;       /* Add space below the form */
+}
+
+.task-input {
+  padding: 10px;             /* Padding inside the input */
+  margin-right: 10px;        /* Space between input and button */
+  border: 1px solid #ccc;   /* Border for the input */
+  border-radius: 4px;       /* Round corners for the input */
+  width: 70%;                /* Set input width */
+  max-width: 300px;          /* Limit input width */
+}
+
+.add-task-button {
+  padding: 10px 20px;        /* Padding inside the button */
+  background-color: #007bff; /* Green background */
+  color: white;              /* White text */
+  border: none;              /* Remove border */
+  border-radius: 4px;        /* Round corners for the button */
+  cursor: pointer;           /* Change cursor to pointer */
+  font-size: 16px;           /* Increase button font size */
+}
+
+.add-task-button:hover {
+  background-color: #007bff; /* Darker green on hover */
+}
+
+.task-list {
+  list-style-type: none;     /* Remove bullet points from the list */
+  padding: 0;                /* Remove padding from the list */
+}
+
+.task-item {
+  background-color: #fff;    /* White background for each task */
+  padding: 10px;             /* Padding inside each task */
+  margin: 5px 0;             /* Margin between tasks */
+  border: 1px solid #ddd;   /* Border around each task */
+  border-radius: 4px;       /* Round corners for the task items */
+  display: flex;             /* Use flexbox for tasks */
+  justify-content: space-between; /* Space out task and delete button */
+}
+
+.delete-button {
+  background-color: #f44336; /* Red background for delete button */
+  color: white;              /* White text */
+  border: none;              /* Remove border */
+  padding: 5px 10px;         /* Padding inside delete button */
+  border-radius: 4px;        /* Round corners */
+  cursor: pointer;          /* Change cursor to pointer */
+}
+
+.delete-button:hover {
+  background-color: #e53935; /* Darker red on hover */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+  .form-box {
+      padding: 15px;
+      margin: 5px;
+  }
+
+  .submit-button {
+      font-size: 14px;
+  }
+
+  .input-field {
+      font-size: 14px;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+
+  .navbar {
+      /* flex-direction: column; */
+      align-items: flex-start;
+  }
+
+  .navbar a {
+      margin: 5px 0;
+  }
+}
