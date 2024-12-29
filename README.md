@@ -19,7 +19,6 @@ In this project, you will find a full-stack web application that allows users to
 ```bash
 test_assignment/
 ├── backend/                  # Node.js Express server and API
-│   ├── controllers/           # Logic for handling user and task data
 │   ├── models/                # Mongoose models for users and tasks
 │   ├── routes/                # API routes for authentication and task management
 │   ├── app.js                 # Main server file
@@ -28,10 +27,22 @@ test_assignment/
 ├── frontend/                  # React frontend for the user interface
 │   ├── public/                # Public assets like index.html
 │   ├── src/                   # React components, hooks, services
-│   │   ├── components/        # React components for login, registration, task list
-│   │   ├── services/          # API request handling
+│   │   ├── components/        # React components for login, registration, task list and Navbar
 │   │   ├── App.js             # Main React component
-│   │   ├── index.js           # React entry point
 │   │   └── App.css            # Basic styling for the app
 │   └── .env                   # Frontend environment settings (e.g., API URL)
 └── .gitignore                 # Ignored files and directories (e.g., node_modules, .env)
+```
+## Instructions
+1. Clone this repo.
+2. cd to **test_assignment**.
+3. To set up dependencies:-
+   ```bash
+   cd backend
+   npm install
+   ```
+   ```bash
+   cd frontend
+   npm install
+   ```
+
